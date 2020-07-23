@@ -1,7 +1,7 @@
 require './lib/calculator'
 
 describe Calculator do
-  describe "#add" do
+    context "#add" do
     it "returns the sum of two numbers" do
         calculator = Calculator.new
         expect(calculator.add(5, 2)).to eql(7)
@@ -16,7 +16,7 @@ describe Calculator do
 
     #Subtraction
 
-    describe "#subtract" do
+    context "#subtract" do
         it "return subtraction of two numbers" do
             calculator = Calculator.new
             expect(calculator.subtract(5,6)).to eql(-1)
@@ -30,7 +30,7 @@ describe Calculator do
 
     #Multiplication
 
-    describe "#multiply" do
+    context "#multiply" do
         it "return multiplication of two numbers" do
             calculator = Calculator.new
             expect(calculator.multiply(5,6)).to eql(30)
@@ -44,7 +44,7 @@ describe Calculator do
   
     #Division
 
-    describe "#Division" do
+    context "#Division" do
         it "return division of two numbers" do
             calculator = Calculator.new
             expect(calculator.divide(5,6)).to eql(0.8333333333333334)
