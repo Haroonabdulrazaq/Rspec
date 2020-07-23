@@ -3,7 +3,7 @@ class Calculator
         a + b + c
     end
     
-   def subtract(a,b,c=0)
+   def subtraction(a,b,c=0)
         a-b-c
    end
 
@@ -12,14 +12,14 @@ class Calculator
     end
 
     def divide(a,b,c=1)
-        a.to_f / b.to_f / c.to_f
+       a.to_f / b.to_f / c.to_f
     end
 end
 
 
 def leap_year?(year)
  year%400 == 0 or year%100 != 0 and year%4 == 0
-end   
+end
 
   if $0 == __FILE__
     def assert_equal(expected, actual, method)
@@ -40,5 +40,5 @@ end
 
     data.each do |year, expected|
         actual = leap_year?(year)
-        assert_equal(actual, expected, "leap_year?#{(year)}")
+        assert_equal(expected, actual, "leap_year?#{(year)}")
     end
